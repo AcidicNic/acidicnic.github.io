@@ -2,12 +2,12 @@
 
 I'm a programmer, so of course I automated this :)
 
-[buildPortfolio/buildPortfolio.go](buildPortfolio/buildPortfolio.go) is a program I wrote that allows me to quickly update the information on my portfolio or the html template, without having to do the tedious work that is writing repetitive HTML.
+[buildPortfolio/buildPortfolio.go](/buildPortfolio/buildPortfolio.go) is a program I wrote that allows me to quickly update the information on my portfolio or the html template, without having to do the tedious work that is writing repetitive HTML.
 
 ### Here's how it works!
 
 1. Reads project, article, and footer data from [buildPortfolio/data.csv](/buildPortfolio/data.csv)
-2. Inserts data into [buildPortfolio/template.tmpl](buildPortfolio/template.tmpl)
+2. Inserts data into [buildPortfolio/template.tmpl](/buildPortfolio/template.tmpl)
 3. Outputs completed template to [index.html](index.html)
 
 ### Flags
