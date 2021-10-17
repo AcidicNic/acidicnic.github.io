@@ -1,12 +1,23 @@
 TYPE,TITLE,DESC,URL
-P,Rainbow.css & Rumble.css,Fun and useful CSS Libraries,/RainbowRumble.css
-P,MakeSite,Generates pretty HTML from .txt or .md files,/MakeSite
-P,RoboTablets Dose Calculator,A small JS calculator tool,/RoboTablets
-A,Why You Should Care About Ethereum 2,DEV.to Article,https://dev.to/acidicnic/why-you-should-care-about-eth2-ethereum-2-0-p3k
-A,How I created AutoZoom,Medium Article,https://medium.com/@nicole_rocha_abadie/how-i-made-a-program-in-go-that-opens-my-zoom-classes-for-me-aab7acd658f4
-A,How to Dockerize a Spigot Server,Medium Article,https://medium.com/@nicole_rocha_abadie/dockerizing-a-spigot-server-1a1193179c8c
-A,Dynamic CSS Footer,Medium Article,https://medium.com/@nicole_rocha_abadie/dynamic-css-footer-that-stays-where-it-should-2bdd320854a6
-A,Hash Tables,Medium Article,https://medium.com/@nicole_rocha_abadie/hash-tables-how-they-work-why-theyre-efficient-ec245dec041d
+P,Special Orders Anywhere,[C#] Stardew Valley Mod with 2.5k unique downloads,https://www.nexusmods.com/stardewvalley/mods/7588
+P,nicc.io Source Code,[GO] nicc.io was generated from a csv file,https://github.com/AcidicNic/acidicnic.github.io#source-code-for-niccio-3
+P,Rainbow.css & Rumble.css,[CSS] A couple fun CSS libraries I use a lot,/RainbowRumble.css
+P,Spookify,[Express] This ghost knows about your Spotify listening habits,http://spookify.nicc.io/
+P,Concealed,[JS] Browser game made at a hackathon,https://nicc.io/concealed/
+P,Image Encoder,[Python] Encode a secret message into your PNG,https://github.com/AcidicNic/image_encoder
+P,tripsit-api,[Node package] A wrapper for tripsit.me's API,https://www.npmjs.com/package/tripsit-api
+P,MakeSite,[GO] Generates pretty HTML from .txt or .md files,https://github.com/AcidicNic/makesite#-static-site-generator
+P,blab.nicc.io,[Express & WebSockets] A chatroom webapp,https://github.com/AcidicNic/Blabble#blabble
+P,Reddit WebScraper,[GO] Scrape posts from reddit with filters,https://github.com/AcidicNic/redditWebScraper
+P,RoboTablets Calculator,[JS] A small calculator tool,/RoboTablets
+
+A,Ethereum 2.0,[dev.to] Why You Should Care About Eth2,https://dev.to/acidicnic/why-you-should-care-about-eth2-ethereum-2-0-p3k
+A,AutoZoom,[Medium] How I Automated Joining My Zoom Classes on Time,https://medium.com/@nicole_rocha_abadie/how-i-made-a-program-in-go-that-opens-my-zoom-classes-for-me-aab7acd658f4
+A,Hash Tables,[Medium] How Do They Work?,https://medium.com/@nicole_rocha_abadie/hash-tables-how-they-work-why-theyre-efficient-ec245dec041d
+A,How To Dockerize a Spigot Server,[Medium] With Persistent Data,https://medium.com/@nicole_rocha_abadie/dockerizing-a-spigot-server-1a1193179c8c
+A,Easy & Dynamic CSS Footer,[Medium] That Stays Where It Should,https://medium.com/@nicole_rocha_abadie/dynamic-css-footer-that-stays-where-it-should-2bdd320854a6
+
 F,fab fa-linkedin,LinkedIn,https://www.linkedin.com/in/nicoleabadie/
 F,fas fa-envelope,Email,mailto: nicole.r.abadie@gmail.com
 F,fab fa-github,Github,https://github.com/AcidicNic
+F,fas fa-file,Resume,https://github.com/AcidicNic/resume/raw/main/nicole_rocha_abadie_resume.pdf

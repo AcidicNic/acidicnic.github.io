@@ -1,41 +1,10 @@
 .content-wrapper {
-    width: 80vw;
+    width: 75vw;
     margin-top: 5vh;
-}
-@keyframes bg_color {
-    0% {background-color: #ff5b5b;}
-    20% {background-color: #ffc75d;}
-    40% {background-color: #b8ff52;}
-    80% {background-color: #91f7ff;}
-    100% {background-color: #ff82d4;}
-}
-@keyframes txt_color {
-    0% {color: #ff5b5b;}
-    20% {color: #ffc75d;}
-    40% {color: #b8ff52;}
-    80% {color: #91f7ff;}
-    100% {color: #ff82d4;}
-}
-@keyframes txt_border_color {
-    0% {color: #ff5b5b; border-color: #ff5b5b;}
-    20% {color: #ffc75d; border-color: #ffc75d;}
-    40% {color: #b8ff52; border-color: #b8ff52;}
-    80% {color: #91f7ff; border-color: #91f7ff;}
-    100% {color: #ff82d4; border-color: #ff82d4;}
 }
 
 body {
-    -webkit-animation: bg_color 20s infinite;
-    animation: bg_color 20s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
     font-family: Ubuntu;
-}
-.btn_nav {
-    -webkit-animation: txt_border_color 20s infinite;
-    animation: txt_border_color 20s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
 }
 
 .horiz-line {
@@ -43,30 +12,20 @@ body {
 }
 
 .btn:hover {
-    color: white;
-}
-
-.footer_text, .title-text {
-    -webkit-animation: txt_color 20s infinite;
-    animation: txt_color 20s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-.txt-trans, .txt-trans:hover {
-    color: rgb(0, 0, 0, .65)
+    color: white !important;
+    border-color: white !important;
 }
 
 .txt-solid-hover:hover {
     color: #000 !important
 }
 
-.bg-trans {
-    background-color: rgb(0, 0, 0, .65)
-}
-
 .text-black {
     color: #000;
+}
+
+#footer > div > a:hover, .navbar-brand:hover * {
+    color: white !important;
 }
 
 /* My dynamic footer! :) */
@@ -80,6 +39,6 @@ html, body {
 #footer {
     height: 10vh; /* Your height may vary */
 }
-.no-ul:hover {
+.no-ul, .no-ul:hover {
     text-decoration: none;
 }

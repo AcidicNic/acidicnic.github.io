@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
 
-    <title>nicc.io
-    </title>
-    <meta name="description" content="Nicole's Portfolio">
-    <meta name="author" content="Nicole Rocha Abadie">
+    <meta charset="utf-8">
+    <title>nicc.io</title>
+    <meta name="description" content="Nicole Abadie's Portfolio">
+    <meta name="author" content="AcidicNic">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-touch-icon.png">
@@ -17,54 +16,59 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Rainbow.css -->
+    <link rel="stylesheet" href="https://nicc.io/RainbowRumble.css/css/rainbow.css">
+
     <!-- My CSS -->
     <link href="./assets/base.css" rel="stylesheet">
 
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/1e324e14c9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7ce3194197.js" crossorigin="anonymous"></script>
+
     <!-- Ubuntu Font -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+
 </head>
-<body>
+<body class="bg-rainbow-0">
 
     <div class="page-wrapper">
         <!-- Navbar -->
-        <nav class="navbar navbar-light bg-dark justify-content-start">
+        <nav class="navbar navbar-light bg-dark justify-content-start align-items-center">
             <a class="navbar-brand" href="/">
-                <i class="fas fa-laptop-code h2 title-text d-inline-block align-top mt-1"></i>
-                <span class="h2 title-text mx-2">nicc.io</span>
+                <i class="fas fa-laptop-code h2 text-rainbow-0 mt-1"></i>
+                <span class="h2 text-rainbow-0 mx-2">nicc.io</span>
             </a>
-            <div class="d-flex justify-content-start">
-            <a class="btn btn_nav mr-3" href="/about">About Me</a>
-
-            </div>
+            <a class="btn border-text-rainbow-0 mr-3" href="/about">About Me</a>
         </nav>
 
         <!-- Body Container -->
-        <div class="content-wrapper mx-auto txt-trans w-80 mx-auto">
-            <h1 class="text-black text-center">Projects:</h1>
+        <div class="content-wrapper mx-auto text-trans">
+            <div class="h2 text-dark text-center">Projects:</div>
 
             {{ range .Projects }}
             <div class="mx-auto text-center mb-2">
                 <div class="d-flex flex-wrap align-items-baseline justify-content-center">
-                    <a class="txt-solid-hover no-ul mb-0 h4 d-block" href="{{ .Url }}">{{ .Title }}</a>
-                    <span class="ml-2"><small>{{ .Desc }}</small></span>
+                    <a class="h4 txt-solid-hover no-ul mb-0" href="{{ .Url }}">{{ .Title }}</a>
+                    <span class="small ml-2">{{ .Desc }}</span>
                 </div>
             </div>
             {{ end }}
 
             <div class="w-50 bg-trans horiz-line mx-auto my-4"></div>
 
-            <h1 class="text-black text-center">Articles:</h1>
+            <div class="h2 text-dark text-center">Articles:</div>
 
             {{ range .Articles }}
             <div class="mx-auto text-center mb-2">
                 <div class="d-flex flex-wrap align-items-baseline justify-content-center">
-                    <a class="txt-solid-hover no-ul mb-0 h4" href="{{ .Url }}" target="_blank">{{ .Title }}</a>
-                    <span class="ml-2"><small>{{ .Desc }}</small></span>
+                    <a class="txt-solid-hover h4 no-ul mb-0" href="{{ .Url }}" target="_blank">{{ .Title }}</a>
+                    <span class="small ml-2">{{ .Desc }}</span>
                 </div>
             </div>
             {{ end }}
+
+            <div class="text-center my-3 small"><i>I'm planning on moving all of these to dev.to, because Medium caps how many articles you can read for free</i> :(</div>
 
         </div>
     </div>
@@ -72,7 +76,7 @@
     <footer id="footer" class="w-100 text-center bg-dark">
         <div class="h-100 d-flex justify-content-center align-items-center">
             {{ range .Footer }}
-            <a class="footer_text mx-2 no-ul" href="{{ .Url }}" target="_blank">
+            <a class="text-rainbow-0 mx-2 no-ul" href="{{ .Url }}" target="_blank">
                 <i class="{{ .Title }}"></i> {{ .Desc }}
             </a>
             {{ end }}
