@@ -19,12 +19,12 @@ I'm a programmer, so of course I automated this :)
  	- A .tmpl file to insert data into. (_default "template.tmpl"_)
 
 Flags are optional and for debugging mostly. The default flags are set to work for this project exactly.
-- ```bash
+```bash
 go run buildPortfolio.go
 ```
 
 If no extensions are given, it will fill them in for you. Or you can use some random extension, it doesn't really matter.
-- ```bash
+```bash
 go run buildPortfolio.go -csv="../../far/away/csvfile" -output="/cool_website.lol" -tmpl="some/nested/templatefile"
 ```
 
