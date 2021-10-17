@@ -1,10 +1,6 @@
 # Source Code for [nicc.io](https://nicc.io) <3
 
-
 I'm a programmer, so of course I automated this :)
-
-**`index.html` is generated from the I wrote inside `buildPortfolio/data.csv` using GO!**
-
 
 `buildPortfolio/buildPortfolio.go` is a program I wrote that allows me to quickly update my portfolio or template, without having to do the tedious work that is writing repetitive HTML.
 
@@ -15,22 +11,22 @@ I'm a programmer, so of course I automated this :)
 
 ### Flags
 
-```bash
-// Flags are optional and for debugging mostly.
-// The default flags are set to work for this project exactly.
-go run buildPortfolio.go
-
-// If no extensions are given, it will fill them in for you.
-// Or you can use some random extension, it doesn't really matter.
-go run buildPortfolio.go -csv="../../far/away/csvfile" -output="/cool_website.lol" -tmpl="some/nested/templatefile"
-```
-
 - __csv__ _string_
     - A CSV file containing data to be inserted into the template. (_default "data.csv"_)
 - __output__ _string_
 	- The .html output file. (_default "../index.html"_)
 - __tmpl__ _string_
  	- A .tmpl file to insert data into. (_default "template.tmpl"_)
+
+Flags are optional and for debugging mostly. The default flags are set to work for this project exactly.
+- ```bash
+go run buildPortfolio.go
+```
+
+If no extensions are given, it will fill them in for you. Or you can use some random extension, it doesn't really matter.
+- ```bash
+go run buildPortfolio.go -csv="../../far/away/csvfile" -output="/cool_website.lol" -tmpl="some/nested/templatefile"
+```
 
 
 ### CSV File Format
