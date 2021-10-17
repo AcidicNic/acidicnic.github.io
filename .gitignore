@@ -1,6 +1,0 @@
-.gitignore
-.DS_Store
-/.idea
-/node_modules
-.env
-/express_server
