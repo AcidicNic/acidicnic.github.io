@@ -21,7 +21,7 @@ I'm a programmer, so of course I automated this :)
 go run buildPortfolio.go
 
 // If no extensions are given, it will fill them in for you.
-// Or you can some random extension, it doesn't really matter.
+// Or you can use some random extension, it doesn't really matter.
 go run buildPortfolio.go -csv="../../far/away/csvfile" -output="/cool_website.lol" -tmpl="some/nested/templatefile"
 ```
 
