@@ -5,6 +5,7 @@ P,Rainbow.css & Rumble.css,[CSS] A couple fun CSS libraries I use a lot,/Rainbow
 P,Spookify,[Express] This ghost knows about your Spotify listening habits,http://spookify.nicc.io/
 P,Concealed,[JS] Browser game made at a hackathon,https://nicc.io/concealed/
 P,Image Encoder,[Python] Encode a secret message into your PNG,https://github.com/AcidicNic/image_encoder
+P,CryptoCrowdFund,[Solidity] Eth smart contracts for crowdfunding,https://github.com/AcidicNic/CryptoCrowdFundContracts
 P,tripsit-api,[Node package] A wrapper for tripsit.me's API,https://www.npmjs.com/package/tripsit-api
 P,MakeSite,[GO] Generates pretty HTML from .txt or .md files,https://github.com/AcidicNic/makesite#-static-site-generator
 P,blab.nicc.io,[Express & WebSockets] A chatroom webapp,https://github.com/AcidicNic/Blabble#blabble
