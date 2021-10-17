@@ -109,11 +109,11 @@ func getData(csvFileDir string) portfolioData {
 		}
 		// Append to appropriate slice
 		switch line[0] {
-			case "Project":
+			case "P": // Project
 				projects = append(projects, item)
-			case "Article":
+			case "A": // Article
 				articles = append(articles, item)
-			case "Footer":
+			case "F": // Footer
 				footer = append(footer, item)
 		}
     }
