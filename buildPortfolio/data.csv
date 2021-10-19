@@ -10,14 +10,11 @@ P,tripsit-api,[Node package] A wrapper for tripsit.me's API,https://www.npmjs.co
 P,MakeSite,[GO] Generates pretty HTML from .txt or .md files,https://github.com/AcidicNic/makesite#-static-site-generator
 P,blab.nicc.io,[Express & WebSockets] A chatroom webapp,https://github.com/AcidicNic/Blabble#blabble
 P,Reddit WebScraper,[GO] Scrape posts from reddit with filters,https://github.com/AcidicNic/redditWebScraper
-P,RoboTablets Calculator,[JS] A small calculator tool,/RoboTablets
-
 A,Ethereum 2.0,[dev.to] Why You Should Care About Eth2,https://dev.to/acidicnic/why-you-should-care-about-eth2-ethereum-2-0-p3k
 A,AutoZoom,[Medium] How I Automated Joining My Zoom Classes on Time,https://medium.com/@nicole_rocha_abadie/how-i-made-a-program-in-go-that-opens-my-zoom-classes-for-me-aab7acd658f4
 A,Hash Tables,[Medium] How Do They Work?,https://medium.com/@nicole_rocha_abadie/hash-tables-how-they-work-why-theyre-efficient-ec245dec041d
 A,How To Dockerize a Spigot Server,[Medium] With Persistent Data,https://medium.com/@nicole_rocha_abadie/dockerizing-a-spigot-server-1a1193179c8c
 A,Easy & Dynamic CSS Footer,[Medium] That Stays Where It Should,https://medium.com/@nicole_rocha_abadie/dynamic-css-footer-that-stays-where-it-should-2bdd320854a6
-
 F,fab fa-linkedin,LinkedIn,https://www.linkedin.com/in/nicoleabadie/
 F,fas fa-envelope,Email,mailto: nicole.r.abadie@gmail.com
 F,fab fa-github,Github,https://github.com/AcidicNic
