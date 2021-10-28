@@ -2,90 +2,99 @@
 <html lang="en">
 <head>
 
-    <meta charset="utf-8">
-    <title>nicc.io</title>
-    <meta name="description" content="Nicole Abadie's Portfolio">
-    <meta name="author" content="AcidicNic">
+  <meta charset="utf-8">
+  <title>nicc.io</title>
+  <meta name="description" content="Nicole Abadie's Portfolio">
+  <meta name="author" content="AcidicNic">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favi/site.webmanifest">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favi/site.webmanifest">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Rainbow.css -->
-    <link rel="stylesheet" href="https://nicc.io/RainbowRumble.css/css/rainbow.css">
+  <!-- Rainbow.css -->
+  <link rel="stylesheet" href="https://nicc.io/RainbowRumble.css/css/rainbow.css">
 
-    <!-- My CSS -->
-    <link href="./assets/base.css" rel="stylesheet">
+  <!-- My CSS -->
+  <link href="./assets/base.css" rel="stylesheet">
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/7ce3194197.js" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/7ce3194197.js" crossorigin="anonymous"></script>
 
-    <!-- Ubuntu Font -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <!-- Ubuntu Font -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
 
 </head>
 <body class="bg-rainbow-0">
 
-    <div class="page-wrapper">
-        <!-- Navbar -->
-        <nav class="navbar navbar-light bg-dark justify-content-start align-items-center">
-            <a class="navbar-brand" href="/">
-                <i class="fas fa-laptop-code h2 text-rainbow-0 mt-1"></i>
-                <span class="h2 text-rainbow-0 mx-2">nicc.io</span>
-            </a>
-            <!-- <a class="btn border-text-rainbow-0 mr-3" href="/about">About Me</a> -->
-        </nav>
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-dark justify-content-start align-items-center">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-laptop-code h2 text-rainbow-0 mt-1"></i>
+        <span class="h2 text-rainbow-0 mx-2">nicc.io</span>
+      </a>
+      <a class="btn border-text-rainbow-0 mr-3" href="https://github.com/acidicNic">About Me</a>
+    </nav>
 
-        <!-- Body Container -->
-        <div class="content-wrapper mx-auto text-trans">
-            <div class="h2 text-dark text-center">Projects:</div>
+      <!-- Body Container -->
+      <div class="content-wrapper mx-auto text-trans">
+        <div class="h2 text-dark text-center">Projects:</div>
 
-            {{ range .Projects }}
-            <div class="mx-auto text-center mb-2">
-                <div class="d-flex flex-wrap align-items-baseline justify-content-center">
-                    <a class="h4 txt-solid-hover no-ul mb-0" href="{{ .Url }}">{{ .Title }}</a>
-                    <span class="small ml-2"> {{ .Desc }}</span>
-                </div>
+        {{ range .Projects }}
+          <div class="mx-auto text-center mb-3 col">
+            <a class="h4 txt-solid-hover no-ul mb-0" href="{{ if ne .Url "" }}{{ .Url }}{{ else }}{{ .Repo }}{{ end }}">{{ .Title }}</a><span class="small"> {{ .Tools }}</span>
+            <div>{{ .Desc }}</div>
+            <div class="small">
+              {{ if ne .Url "" }}
+                <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Url }}"><i class="fas fa-laptop"></i> Try it out!</a> -->
+                <a class="txt-solid-hover text-trans no-ul mr-1" href="{{ .Url }}">[ <i class="fas fa-laptop"></i> Try it out! ]</a>
+              {{ end }}
+              <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Repo }}"><i class="fab fa-github"></i> Source Code</a> -->
+              <a class="txt-solid-hover text-trans no-ul" href="{{ .Repo }}"><b>[ <i class="fab fa-github"></i> Source Code ]</b></a>
             </div>
-            {{ end }}
+          </div>
+        {{ end }}
 
-            <div class="w-50 bg-trans horiz-line mx-auto my-4"></div>
+        <div class="w-75 bg-trans horiz-line mx-auto my-4"></div>
 
-            <div class="h2 text-dark text-center">Articles:</div>
+        <div class="h2 text-dark text-center">Articles:</div>
 
-            {{ range .Articles }}
-            <div class="mx-auto text-center mb-2">
-                <div class="d-flex flex-wrap align-items-baseline justify-content-center">
-                    <a class="txt-solid-hover h4 no-ul mb-0" href="{{ .Url }}" target="_blank">{{ .Title }}</a>
-                    <span class="small ml-2">{{ .Desc }}</span>
-                </div>
+        {{ range .Articles }}
+          <div class="mx-auto text-center mb-3 col">
+            <a class="txt-solid-hover h4 no-ul mb-0" href="{{ .Url }}" target="_blank">{{ .Title }}</a><span class="small"> {{ .Tag }}</span>
+            <div>{{ .Desc }}</div>
+            <div class="small">
+              <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Url }}"><i class="fas fa-book"></i> Read Article</a> -->
+              <a class="txt-solid-hover text-trans no-ul" href="{{ .Url }}">[ <i class="fas fa-book"></i> Read Article ]</a>
             </div>
-            {{ end }}
+          </div>
+        {{ end }}
 
-            <div class="text-center my-3 small"><i>I'm planning on moving all of these to dev.to, because Medium caps how many articles you can read for free</i></div>
+        <div class="text-center my-3 small"><i>I'm planning on moving all of these to dev.to, because Medium caps how many articles you can read for free</i></div>
 
-        </div>
     </div>
+  </div>
 
-    <footer id="footer" class="w-100 text-center bg-dark">
-        <div class="h-100 d-flex justify-content-center align-items-center">
-            {{ range .Footer }}
-            <a class="text-rainbow-0 mx-2 no-ul" href="{{ .Url }}" target="_blank">
-                <i class="{{ .Title }}"></i> {{ .Desc }}
-            </a>
-            {{ end }}
-        </div>
-    </footer>
+  <footer id="footer" class="w-100 text-center bg-dark py-4">
+    <div class="h-100 d-flex justify-content-center align-items-center">
+      {{ range .Footer }}
+        <a class="text-rainbow-0 mx-2 no-ul" href="{{ .Url }}" target="_blank">
+          <i class="{{ .Icon }}"></i> {{ .Desc }}
+        </a>
+      {{ end }}
+    </div>
+  </footer>
 
     <!-- jQuery, Popper, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>

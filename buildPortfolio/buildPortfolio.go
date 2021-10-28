@@ -56,16 +56,30 @@ func main() {
 
 // Struct of everything to be inserted into template
 type portfolioData struct {
-    Projects []itemData
-    Articles []itemData
-    Footer []itemData
+    Projects []projectData
+    Articles []articleData
+    Footer []footerData
 }
 
-// This is how each item is structured
-type itemData struct {
+type projectData struct {
+    Title string
+    Desc string
+    Tools string    // languages, tools, & technologies used
+    Repo string     // gh repo name
+    Url string      // url to live project
+}
+
+type articleData struct {
+    Title string
+    Tag string
+    Desc string
     Url string
-    Title string // For a footer item, this is the fontawesome icon classes
-    Desc string // For a footer item, this is the text
+}
+
+type footerData struct {
+    Icon string
+    Desc string
+    Url string
 }
 
 
@@ -89,32 +103,41 @@ func getData(csvFileDir string) portfolioData {
     data := readCsvFile(csvFileDir)
 
     // Setup vars for later
-    var projects []itemData
-    var articles []itemData
-    var footer []itemData
-    var item itemData
+    var projects []projectData
+    var articles []articleData
+    var footer []footerData
+    // var item itemData
 
     // Sort thru the data from the csv
     for _, line := range data {
-        // Skip iteration if header, empty line, or missing field
-        if line[0] == "TYPE" || line[0] == "" || len(line) < 4 {
+        // Skip iteration if empty line or missing fields
+        if line[0] == "" || len(line) < 6 {
             continue
         }
 
-        // Build the item
-        item = itemData {
-            Title: line[1],
-            Desc: line[2],
-            Url: line[3],
-        }
         // Append to appropriate slice
         switch line[0] {
             case "P": // Project
-                projects = append(projects, item)
+                projects = append(projects, projectData {
+                  Title: line[1],
+                  Tools: line[2],
+                  Desc: line[3],
+                  Repo: line[4],
+                  Url: line[5],
+                })
             case "A": // Article
-                articles = append(articles, item)
+                articles = append(articles, articleData {
+                  Title: line[1],
+                  Tag: line[2],
+                  Desc: line[3],
+                  Url: line[4],
+                })
             case "F": // Footer
-                footer = append(footer, item)
+                footer = append(footer, footerData {
+                  Icon: line[1],
+                  Desc: line[2],
+                  Url: line[3],
+                })
         }
     }
     // Return struct of all the data packaged together for the template

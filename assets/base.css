@@ -17,7 +17,15 @@ body {
 }
 
 .txt-solid-hover:hover {
-    color: #000 !important
+    color: #000 !important;
+}
+
+.border-solid-hover:hover {
+    border-color: #000 !important;
+}
+
+.txt-white-hover:hover {
+    color: #fff !important;
 }
 
 .text-black {
@@ -28,17 +36,9 @@ body {
     color: white !important;
 }
 
-/* My dynamic footer! :) */
-html, body {
-    min-height: 100vh;
-}
-.page-wrapper {
-    min-height: 90vh; /* 100vh - your footer height */
-    display: block;
-}
-#footer {
-    height: 10vh; /* Your height may vary */
-}
 .no-ul, .no-ul:hover {
     text-decoration: none;
+}
+.bg-trans-hov:hover {
+  background-color: rgb(0, 0, 0, .65);
 }

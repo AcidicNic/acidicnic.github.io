@@ -1,7 +1,5 @@
 # Source Code for [nicc.io](https://nicc.io) <3
 
-I'm a programmer, so of course I automated this :)
-
 [buildPortfolio/buildPortfolio.go](/buildPortfolio/buildPortfolio.go) is a program I wrote that allows me to quickly update the information on my portfolio or the html template, without having to do the tedious work that is writing repetitive HTML.
 
 ### Here's how it works!
@@ -28,15 +26,3 @@ If no extensions are given, it will fill them in for you. Or you can use some ra
 ```bash
 go run buildPortfolio.go -csv="../../far/away/csvfile" -output="/cool_website.lol" -tmpl="some/nested/templatefile"
 ```
-
-
-### CSV File Format
-
-`TYPE,TITLE,DESC,URL`
-- `TYPE`: Has to be either P, A, or F
-    - P for Project
-    - A for Article
-    - F for Footer
-- `TITLE`: A title (For a footer item, this field should be the fontawesome classes for an icon.)
-- `DESC`: A short description (For a footer item, this field should be the text  next to the icon.)
-- `URL`: A URL
