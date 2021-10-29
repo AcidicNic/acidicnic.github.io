@@ -68,7 +68,7 @@
             <div class="small">
               {{ if ne .Url "" }}
                 <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Url }}"><i class="fas fa-laptop"></i> Try it out!</a> -->
-                <a class="txt-solid-hover text-trans no-ul mr-1" href="{{ .Url }}">[ <i class="fas fa-laptop"></i> Try it out! ]</a>
+                <a class="txt-solid-hover text-trans no-ul mr-1" href="{{ .Url }}"><b>[ <i class="fas fa-laptop"></i> Try it out! ]</b></a>
               {{ end }}
               <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Repo }}"><i class="fab fa-github"></i> Source Code</a> -->
               <a class="txt-solid-hover text-trans no-ul" href="{{ .Repo }}"><b>[ <i class="fab fa-github"></i> Source Code ]</b></a>
@@ -86,7 +86,7 @@
             <div>{{ .Desc }}</div>
             <div class="small">
               <!-- <a class="btn btn-sm border-trans text-trans txt-solid-hover border-solid-hover" href="{{ .Url }}"><i class="fas fa-book"></i> Read Article</a> -->
-              <a class="txt-solid-hover text-trans no-ul" href="{{ .Url }}">[ <i class="fas fa-book"></i> Read Article ]</a>
+              <a class="txt-solid-hover text-trans no-ul" href="{{ .Url }}"><b>[ <i class="fas fa-book"></i> Read Article ]<b></a>
             </div>
           </div>
         {{ end }}
