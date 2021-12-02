@@ -6,6 +6,7 @@ P,Concealed,JavaScipt,A short browser game made at a hackathon,https://github.co
 P,Image Encoder,Python,Encode a secret message into your PNG (write up in readme),https://github.com/AcidicNic/image_encoder,
 P,CryptoCrowdFund,"Solidity, Brownie",Eth smart contracts for crowdfunding,https://github.com/AcidicNic/CryptoCrowdFundContracts,
 P,tripsit-api,Node package,A wrapper for tripsit.me's API,https://github.com/AcidicNic/tripsit-api,https://www.npmjs.com/package/tripsit-api
+P,Tetris,"React, Redux",It's Tetris in your browser!,https://github.com/AcidicNic/tetris,/tetris
 P,Breakout Game,JavaScript,A small browser game with some bricks and a ball,https://github.com/AcidicNic/brick-game,/brick-game
 P,MakeSite,GO,Generates pretty HTML from .txt or .md files,https://github.com/AcidicNic/makesite#-static-site-generator,
 P,Rainbow.css & Rumble.css,CSS,A couple fun CSS libraries to make your html rainbow and look like it's shaking if you want,https://github.com/AcidicNic/RainbowRumble.css,/RainbowRumble.css
